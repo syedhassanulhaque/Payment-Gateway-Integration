@@ -100,7 +100,7 @@ h2{
 /* Home page */
 #home::before{
     content: '';
-    background: url('/back2.jpg');
+    background: url('../back2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
