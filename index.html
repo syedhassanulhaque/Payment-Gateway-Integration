@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khana Khazana</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/phone.css">
+</head>
+
+<body>
+    <nav>
+
+        <div class="navbar ">
+            <span>
+                <img src="logo.png" alt="" class="logo">
+                
+            </span>
+            <ul class='content' id='content'>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#">Our Mission</a></li>
+                <li><a href="#">Our Donors</a></li>
+                <li><a href="https://rzp.io/l/agtKgnA" target="_blank">Donate Us </a></li>
+            </ul>
+        </div>
+        <div id="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+    </nav>
+    <section id="home">
+        <div>
+
+            <h1>children's promise</h1>
+            <br><br>
+            <p>Your donation has the potential to help children who are in severe circumstances. </p>
+            <br> <p>We seek to make a country where children have access to safe, fulfilling chances for growth.</p>
+            <br>
+            <p> 
+                Your contribution can make their life better!</p>
+                <br>
+            <p>Come, play your part. Come, donate.</p>
+            <br>
+            <div><a href="https://rzp.io/l/agtKgnA" target="_blank">Donate Now</a></div>
+
+        </div>
+    </section>
+        <footer>
+            <div class="container">
+                <div>Designed & Developed By : Syed Hassanul Haque </div>
+                <div>Intern at <b>The Sparks Foundation</b></div>
+            </div>
+        </footer>
+    <script>
+
+        icon = document.getElementById('icon');
+        content = document.getElementById('content');
+
+        var hamburger = false;
+        icon.onclick = run;
+
+        function run() {
+            if (hamburger == false) {
+                hamburger = true;
+                content.style.height = '300px';
+                icon.style.border = '0px';
+                icon.children[0].style = 'width:70% ; transform:rotate(45deg) ; transform-origin: 0% 0%;';
+                icon.children[1].style = 'width:0%';
+                icon.children[2].style = 'width:70% ; transform:rotate(-45deg) ; transform-origin: 0% 0%;';
+            }
+
+            else if (hamburger == true) {
+                hamburger = false;
+                content.style.height = '0px';
+                icon.style.border = '2px solid white';
+                icon.children[0].style = 'width:60% ; transform:rotate(0deg) ; transform-origin: 0% 0%;';
+                icon.children[1].style = 'width:60%';
+                icon.children[2].style = 'width:60% ; transform:rotate(0deg) ; transform-origin: 0% 0%;';
+            }
+        }
+    </script>
+</body>
+
+</html>
