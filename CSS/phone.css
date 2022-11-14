@@ -102,8 +102,11 @@
         padding: 5px;
        
     }
-    p{
-      font-size : 0.7rem
+    #home p{
+      font-size : 0.7rem;
      }
+   .container div{
+font-size : 0.7rem;
+}
 }
 
