@@ -3,7 +3,7 @@
          /* background: rgba(46, 46, 219, 0.527) !important; */
      }
      h1{
-         font-size: 3rem;
+         font-size: 2rem;
      }
 
        .navbar::before{
@@ -102,6 +102,8 @@
         padding: 5px;
        
     }
-    
+    p{
+      font-size : 0.7rem
+     }
 }
 
